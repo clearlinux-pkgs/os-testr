@@ -39,3 +39,4 @@ tox
 traceback2-python
 unittest2-python
 virtualenv
+os-testr

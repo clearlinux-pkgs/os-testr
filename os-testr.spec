@@ -4,7 +4,7 @@
 #
 Name     : os-testr
 Version  : 0.1.0
-Release  : 3
+Release  : 4
 URL      : http://tarballs.openstack.org/os-testr/os-testr-0.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/os-testr/os-testr-0.1.0.tar.gz
 Summary  : A testr wrapper to provide functionality for OpenStack projects
@@ -23,12 +23,14 @@ BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : fixtures-python
 BuildRequires : flake8-python
+BuildRequires : funcsigs-python
 BuildRequires : hacking
 BuildRequires : linecache2-python
 BuildRequires : markupsafe-python
 BuildRequires : mccabe-python
 BuildRequires : mock-python
 BuildRequires : mox3-python
+BuildRequires : os-testr
 BuildRequires : oslosphinx-python
 BuildRequires : oslotest-python
 BuildRequires : pbr
@@ -71,9 +73,9 @@ bin components for the os-testr package.
 %package python
 Summary: python components for the os-testr package.
 Group: Default
+Requires: Babel-python
 Requires: testtools-python
 Requires: testrepository-python
-Requires: Babel-python
 
 %description python
 python components for the os-testr package.
@@ -86,6 +88,11 @@ python components for the os-testr package.
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
+%check
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
+python2 setup.py test
 %install
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot}
