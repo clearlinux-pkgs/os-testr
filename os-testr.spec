@@ -4,7 +4,7 @@
 #
 Name     : os-testr
 Version  : 0.4.2
-Release  : 6
+Release  : 7
 URL      : https://pypi.python.org/packages/source/o/os-testr/os-testr-0.4.2.tar.gz
 Source0  : https://pypi.python.org/packages/source/o/os-testr/os-testr-0.4.2.tar.gz
 Summary  : A testr wrapper to provide functionality for OpenStack projects
