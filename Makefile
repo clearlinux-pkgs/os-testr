@@ -1,5 +1,5 @@
 PKG_NAME := os-testr
-URL := https://pypi.python.org/packages/source/o/os-testr/os-testr-0.4.2.tar.gz
+URL := http://tarballs.openstack.org/os-testr/os-testr-0.6.0.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
