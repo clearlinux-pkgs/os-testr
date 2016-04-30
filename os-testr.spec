@@ -4,7 +4,7 @@
 #
 Name     : os-testr
 Version  : 0.6.0
-Release  : 10
+Release  : 11
 URL      : http://tarballs.openstack.org/os-testr/os-testr-0.6.0.tar.gz
 Source0  : http://tarballs.openstack.org/os-testr/os-testr-0.6.0.tar.gz
 Summary  : A testr wrapper to provide functionality for OpenStack projects
@@ -13,6 +13,8 @@ License  : Apache-2.0
 Requires: os-testr-bin
 Requires: os-testr-python
 BuildRequires : Babel-python
+BuildRequires : Jinja2
+BuildRequires : docutils
 BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : fixtures-python
@@ -25,6 +27,7 @@ BuildRequires : pytest
 BuildRequires : python-dev
 BuildRequires : python-mimeparse-python
 BuildRequires : python3-dev
+BuildRequires : pytz-python
 BuildRequires : setuptools
 BuildRequires : testrepository-python
 BuildRequires : testtools
