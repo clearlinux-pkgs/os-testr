@@ -1,16 +1,40 @@
 CHANGES
 =======
 
+0.7.0
+-----
+
+* Add whitelist file to ostestr docs
+* Seperate regex builder logic into a seperate module
+* Split functionality out of main
+* Updated from global requirements
+* Fix docs typos
+* Updated from global requirements
+* Fix coverage option and execution
+* Add version option for ostestr and subunit-trace
+* Remove openstack-common.conf
+* Add pypi download + version badges into README.rst
+* remove python 3.3 trove classifier
+* Treat xfail output like success
+* Updated from global requirements
+* correct typo
+* Enable testr run passthrough arguments
+* Updated from global requirements
+* Add unit test for colorizer
+
 0.6.0
 -----
 
 * Support comments in whitelist files
 * Add tool to create a subunit stream
+* py26/py33 are no longer supported by Infra's CI
+* remove python 2.6 trove classifier
 
 0.5.0
 -----
 
 * Add support to ostestr to use subunit-trace color
+* Add subunit_trace --color option's doc
 * Fix documentation typos
 * Fix coverage section in tox.ini
 * Add delete *.pyc command before executing ostestr
