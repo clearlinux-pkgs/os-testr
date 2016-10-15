@@ -1,6 +1,32 @@
 CHANGES
 =======
 
+0.8.0
+-----
+
+* Updated from global requirements
+* Handle overlapping black regexes
+* Updated from global requirements
+* Update home-page url
+* Add ostestr as a function
+* Error on invalid list parameter combination
+* Use dash instead of underscore in args
+* Add --black-regex/-B option
+* Allow to specifiy black/white list at the same time
+* Make the listbuilder the default strategy
+* Construct a list of test cases instead of passing a regexp
+* Add support for Python versions
+* Delete openstack/common in flake8 exclude list
+* Simplify logic in _get_test_list
+* Remove discover from test-requirements
+* Make subprocess outputs to text for Python 3
+* Fix doc warnings and disable smarty-pants
+* Updated from global requirements
+* Remove the TODO file
+* Make unexpected success as fail
+* Add documentation for generate-subunit
+* Sort failed tests at the top on HTML result page
+
 0.7.0
 -----
 
