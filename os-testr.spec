@@ -4,7 +4,7 @@
 #
 Name     : os-testr
 Version  : 0.8.0
-Release  : 17
+Release  : 18
 URL      : http://tarballs.openstack.org/os-testr/os-testr-0.8.0.tar.gz
 Source0  : http://tarballs.openstack.org/os-testr/os-testr-0.8.0.tar.gz
 Summary  : A testr wrapper to provide functionality for OpenStack projects
