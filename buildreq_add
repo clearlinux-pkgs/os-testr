@@ -1,23 +1,2 @@
-Babel-python
-extras
-extras-python
-fixtures-python
-pbr
-pip
-pluggy
-py-python
-pyrsistent-python
-pytest
-python3-dev
-python-dev
-python-mimeparse-python
-setuptools
-testrepository-python
-testtools
-testtools-python
-tox
-traceback2-python
-unittest2-python
-virtualenv
-docutils
-Jinja2
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.

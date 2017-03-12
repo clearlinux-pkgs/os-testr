@@ -6,7 +6,7 @@
 #
 Name     : os-testr
 Version  : 0.8.0
-Release  : 20
+Release  : 21
 URL      : http://tarballs.openstack.org/os-testr/os-testr-0.8.0.tar.gz
 Source0  : http://tarballs.openstack.org/os-testr/os-testr-0.8.0.tar.gz
 Source99 : http://tarballs.openstack.org/os-testr/os-testr-0.8.0.tar.gz.asc
@@ -15,30 +15,17 @@ Group    : Development/Tools
 License  : Apache-2.0
 Requires: os-testr-bin
 Requires: os-testr-python
-BuildRequires : Babel-python
-BuildRequires : Jinja2
-BuildRequires : docutils
-BuildRequires : extras
-BuildRequires : extras-python
-BuildRequires : fixtures-python
+Requires: Babel
+Requires: pbr
+Requires: python-subunit
+Requires: testrepository
+Requires: testtools
+BuildRequires : configparser-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pyrsistent-python
-BuildRequires : pytest
 BuildRequires : python-dev
-BuildRequires : python-mimeparse-python
 BuildRequires : python3-dev
-BuildRequires : pytz-python
 BuildRequires : setuptools
-BuildRequires : testrepository-python
-BuildRequires : testtools
-BuildRequires : testtools-python
-BuildRequires : tox
-BuildRequires : traceback2-python
-BuildRequires : unittest2-python
-BuildRequires : virtualenv
 
 %description
 ========
@@ -59,9 +46,6 @@ bin components for the os-testr package.
 %package python
 Summary: python components for the os-testr package.
 Group: Default
-Requires: Babel-python
-Requires: testrepository-python
-Requires: testtools-python
 
 %description python
 python components for the os-testr package.
@@ -72,12 +56,12 @@ python components for the os-testr package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1484559528
+export SOURCE_DATE_EPOCH=1489337441
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1484559528
+export SOURCE_DATE_EPOCH=1489337441
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
