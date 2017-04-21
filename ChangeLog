@@ -1,6 +1,17 @@
 CHANGES
 =======
 
+0.8.1
+-----
+
+* Updated from global requirements
+* [Fix gate]Update test requirement
+* Fix error when without --regex option
+* Updated from global requirements
+* Add Constraints support
+* Fix typo and change regexp to regex
+* Track failures during sorting of test results
+
 0.8.0
 -----
 
@@ -17,6 +28,7 @@ CHANGES
 * Construct a list of test cases instead of passing a regexp
 * Add support for Python versions
 * Delete openstack/common in flake8 exclude list
+* Save subunit results file when using --no-discover
 * Simplify logic in _get_test_list
 * Remove discover from test-requirements
 * Make subprocess outputs to text for Python 3
