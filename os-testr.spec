@@ -6,7 +6,7 @@
 #
 Name     : os-testr
 Version  : 1.0.0
-Release  : 29
+Release  : 30
 URL      : http://tarballs.openstack.org/os-testr/os-testr-1.0.0.tar.gz
 Source0  : http://tarballs.openstack.org/os-testr/os-testr-1.0.0.tar.gz
 Source99 : http://tarballs.openstack.org/os-testr/os-testr-1.0.0.tar.gz.asc
